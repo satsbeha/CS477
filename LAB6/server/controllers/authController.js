@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const User = require('../models/user');
-const accessTokenSecret = "tina's shopping";
+const accessTokenSecret = "sol shopping";
 
 exports.login = (req, res, next) => {
     const user = new User(req.body.username, req.body.password, null).login();
